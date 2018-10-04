@@ -1,17 +1,35 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div style="margin: 30px;"
+         v-for="(color, i) in colors"
+         :key="i">
+      <HelloWorld />
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from './components/HelloWorld'
 
 export default {
   name: 'app',
+  data() {
+    return {
+      isVisible: null
+    }
+  },
   components: {
     HelloWorld
+  },
+  computed: {
+    colors() {
+      const num = parseInt(20) || 1
+      return new Array(num).fill('').map((i, idx) => {
+        return {
+          bg: `hsl(${(idx * 2 / num) * 360},100%,50%)`
+        }
+      }) 
+    }
   }
 }
 </script>

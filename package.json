@@ -1,11 +1,14 @@
 {
   "name": "vue-sync-location",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "deploy-page": "gh-pages -d dist",
+    "build-deploy": "yarn build && yarn deploy-page",
+    "build-lib": "vue-cli-service build --target lib --name vue-sync-location src/lib/index.js"
   },
   "dependencies": {
     "vue": "^2.5.17"
@@ -14,6 +17,8 @@
     "@vue/cli-plugin-babel": "^3.0.4",
     "@vue/cli-plugin-eslint": "^3.0.4",
     "@vue/cli-service": "^3.0.4",
+    "gh-pages": "^2.0.1",
+    "vue-on-intersect": "^0.1.2",
     "vue-template-compiler": "^2.5.17"
   },
   "eslintConfig": {
@@ -39,5 +44,17 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ]
+  ],
+  "files": [
+    "dist/*",
+    "src/*",
+    "public/*",
+    "*.json",
+    "*.js"
+  ],
+  "main": "dist/vue-sync-location.common.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adrienhobbs/vue-sync-location.git"
+  }
 }

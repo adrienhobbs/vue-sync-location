@@ -1,5 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
+import VueSyncLocation from './lib/index'
+Vue.use(VueSyncLocation)
 
 Vue.config.productionTip = false
 
