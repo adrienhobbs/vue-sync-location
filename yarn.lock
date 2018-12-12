@@ -7567,10 +7567,10 @@ vue-loader@^15.4.2:
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
 
-vue-on-intersect@^0.1.2:
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/vue-on-intersect/-/vue-on-intersect-0.1.2.tgz#32609f63d1d064c3d67b595ca68b3016cf5c0981"
-  integrity sha512-+RPbxOTdIXwK52qWZfIlUyLJm+EpvlXaaYMpiT1dhoYs7lgfYmNLIkgnHQI5Ky6GRaPeA16oyPHjh626AMb+0Q==
+vue-on-intersect@^0.2.4:
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/vue-on-intersect/-/vue-on-intersect-0.2.4.tgz#a7201b1e24915d7662d206acbb09a57252005fe8"
+  integrity sha512-LTg2SPvTobjzP33JrrM9ggxkVMRPA+1IAWdKXJqD0/f+URvEKMucCd66V9JODQtj19IPOztMSfzDxgIX3JUukw==
   dependencies:
     vue "^2.5.17"
 
